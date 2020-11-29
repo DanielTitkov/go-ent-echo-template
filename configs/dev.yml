@@ -1,0 +1,12 @@
+env: dev
+db:
+  uri: "host=localhost port=5437 user=test dbname=test password=pass sslmode=disable"
+  driver: postgres
+server:
+  port: 8000
+  host: "0.0.0.0"
+auth:
+  exp: 72000 # hours
+  secret: secret-key
+job: 
+  sampleJobPeriod: 20 # seconds
